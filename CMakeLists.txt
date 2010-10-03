@@ -1,7 +1,7 @@
 
 
 project(TIFF)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 include(dist.cmake)
 
 MACRO(ADD_PREFIX prefix rootlist)
