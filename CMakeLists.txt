@@ -1,6 +1,6 @@
 
 
-project(TIFF)
+project(tiff)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 include(dist.cmake)
 
