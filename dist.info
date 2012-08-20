@@ -4,10 +4,10 @@ name = "libtiff"
 version = "3.8.2"
 
 desc = "TIFF library."
-author = ""
-license = ""
-url = "http://www.remotesensing.org/libtiff"
+license = "public domain"
 maintainer = "Peter Kapec"
+author = "Richard Hipp, Dan Kennedy, Joe Mistachkin"
+url = "http://www.remotesensing.org/libtiff"
 
 depends = {
 	"zlib >= 1.2.3",
