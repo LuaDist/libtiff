@@ -152,6 +152,11 @@ set ( const const )
 # Define to `__inline__' or `__inline' if that's what the C compiler
 # calls it, or to nothing if 'inline' is not supported under any name.
 #set ( inline ) # improve?
+if( APPLE )
+  if( CMAKE_C_COMPILER_ID MATCHES "Clang" )
+    set( inline inline )
+  endif()
+endif()
 
 #Define to `long' if <sys/types.h> does not define.
 #undef off_t
