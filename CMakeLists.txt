@@ -191,6 +191,10 @@ list ( APPEND TIFF_SRCS tif_win32.c )
 endif ( )
 add_prefix ( libtiff/ TIFF_SRCS )
 
+if( NOT HAVE_SEARCH_H )
+  list ( APPEND TIFF_SRCS port/lfind.c )
+endif ( )
+
 if ( NOT WIN32 )
   find_library ( M_LIBRARY NAMES m PATHS /usr/lib /usr/local/lib )
   if ( NOT M_LIBRARY )
